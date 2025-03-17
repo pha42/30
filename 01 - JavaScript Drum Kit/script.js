@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function (e) {
   const titleElement = document.getElementById("title");
   let titleIndex = 0;
   function changeTitle() {
-  titleElement.textContent = titleArray[titleIndex];
+  titleElement.textContent = titleArray[titleIndex].repeat(100);
   titleIndex = (titleIndex + 1) % titleArray.length;
   }
   setInterval(changeTitle, 1000);
