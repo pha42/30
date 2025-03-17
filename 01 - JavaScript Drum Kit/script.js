@@ -19,3 +19,13 @@ document.addEventListener("keydown", async function (e) {
   // audio.volume = baseVolume;
   // audio.play();
 });
+document.addEventListener("DOMContentLoaded", async function (e) {
+  const titleArray = ["🎶", "🎵", "🎷", "🎺", "🥁", "🪕", "🎼"];
+  const titleElement = document.getElementById("title");
+  let titleIndex = 0;
+  function changeTitle() {
+  titleElement.textContent = titleArray[titleIndex];
+  titleIndex = (titleIndex + 1) % titleArray.length;
+  }
+  setInterval(changeTitle, 1000);
+});
