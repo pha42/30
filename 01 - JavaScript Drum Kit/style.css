@@ -32,14 +32,14 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(146, 146, 146, 0.11);
   text-shadow: 0 0 .5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #f56b6b;
+  box-shadow: 0 0 5rem #f56b6b;
 }
 
 kbd {
@@ -48,8 +48,9 @@ kbd {
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #f56b6b;
+  text-shadow: 0 0 1rem #ffc1c1;
 }
